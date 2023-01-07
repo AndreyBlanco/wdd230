@@ -1,0 +1,78 @@
+#content {
+    display: grid;
+    grid-template-rows: 150px 1fr 75px;
+    width: 500px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(22, 22, 130);
+    font-family: Arial, Helvetica, sans-serif;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 150px 350px;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 0.50rem black);
+}
+
+.myphoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    width: 100%;
+
+}
+
+#photo {
+    height: 100px;
+    border-radius: 7px;
+    filter: drop-shadow(0 0 0.40rem black);
+}
+
+.myname {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    filter: drop-shadow(0 0 0.40rem black);
+    align-items: center;
+    grid-column: 2/3;
+}
+
+footer {
+    background-color: rgb(22, 22, 130);
+    font-family: Arial, Helvetica, sans-serif;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 0.50rem black);
+}
+
+#name {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: white;
+    grid-row: 1/2;
+}
+
+#mydate {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    color: yellow;
+    font-size: 12px;
+    grid-row: 2/3;
+}
+
+.lessons_list {
+    grid-row: 2/3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-size: 25px;
+    filter: drop-shadow(0 0 0.10rem rgb(96, 96, 96));
+}
