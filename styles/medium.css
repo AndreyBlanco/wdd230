@@ -1,0 +1,31 @@
+@media only screen and (min-width: 32.5em) {
+    h2 {
+        font-size: 3.5rem;
+        filter: drop-shadow(0 0 0.10rem rgb(96, 96, 96));
+    }
+
+    header, footer {
+        border-radius: 15px;
+    }
+
+    header {
+        height: 215px;
+    }
+
+    header img {
+        float: left;
+        border-radius: 7px;
+        filter: drop-shadow(0 0 0.40rem black);
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        filter: drop-shadow(0 0 0.40rem black);
+    }
+
+    #content {
+        width: 32.5em;
+    }
+    
+
+  }
