@@ -1,0 +1,75 @@
+h2 {
+    background-color: #22222e;
+    color: white;
+    font-family: "Teko", Arial, sans-serif;
+    padding: 0.3em;
+    margin: 0;
+    margin-bottom: 0.2em;
+    padding-left: 0.6em;
+    border-radius: 10px 10px 0 0;
+}
+
+header, footer {
+    margin: auto;
+    text-align: center;
+    background-color: #22222e;
+    color: white;
+    padding: 0.5em;
+}
+
+footer {
+    font-family: "Exo 2", Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas: "name" "mydate";
+}
+
+h1 {
+    margin: 0.1em;
+    padding: 0;
+    font-family: "Teko", Arial, sans-serif;
+}
+
+header a {
+    margin: 0;
+    padding: 0;
+    font-family: "Exo 2", Helvetica, sans-serif;
+}
+
+main {
+    margin: auto;
+    display: grid;
+    grid-template-areas: "first_sample" "second_sample" "third_sample";
+}
+
+main a {
+    font-family: "Exo 2", Helvetica, sans-serif;
+    margin-left: 0.6em;
+}
+
+h3 {
+    font-family: "Exo 2", Helvetica, sans-serif;
+    margin: 0;
+    margin-left: 0.6em;
+}
+
+.image_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+}
+
+section {
+    border-radius: 10px;
+    background-color: rgb(234, 234, 234);
+    margin: 1em;
+}
+
+p {
+    margin: 1em;
+    font-family: "Exo 2", Helvetica, sans-serif;
+}
+
+main img {
+    width: 100%;
+}

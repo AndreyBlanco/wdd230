@@ -1,0 +1,51 @@
+@media only screen and (min-width: 1060px) {
+    #content {
+        margin: auto;
+        max-width: 1060px;
+    }
+
+    main {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+     
+    #first_sample {
+        grid-column: 1/2;
+    }
+    
+    #second_sample {
+        grid-column: 2/3;
+    }
+    
+    #third_sample {
+        grid-column: 3/4;
+    }
+
+    h1 {
+        font-size: 4em;
+        margin-bottom: 0;
+    }
+
+    header a {
+       font-size: 2em;
+    }
+
+    footer {
+        display: grid;
+        grid-template-areas: "name mydate";
+    }
+
+    #name {
+        text-align: end;
+        margin-right: 1em;
+    }
+
+    #mydate {
+        text-align: start;
+        margin-left: 1em;
+    }
+
+
+}
