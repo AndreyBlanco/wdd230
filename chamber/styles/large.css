@@ -1,0 +1,48 @@
+@media only screen and (min-width: 64rem) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 4.5fr 1fr;
+    }
+    
+    #navmove {
+        grid-column: 3/4;
+        grid-row: 1;
+        align-self: center;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+
+    nav ul li a {
+        border: none;
+    }
+
+    #social {
+        grid-column: 4;
+        justify-self: start;
+    }
+
+    #hamburgerBtn {
+        display: none;
+    }
+    
+    nav ul li a  {
+        padding: 0.5rem 1 rem;
+    }
+    
+    #footerLine a:nth-child(1), #footerLine a:nth-child(2), #footerLine a:nth-child(3) {
+        border-right: 1px solid white;
+     
+    }
+
+    #footerLine a {
+        display: inline;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+}

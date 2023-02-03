@@ -1,0 +1,48 @@
+@media only screen and (min-width: 35rem) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr;
+        gap: 15px;
+        padding-top: 20px;
+    }
+    
+    #footInfo {
+        grid-column: 3/4;
+        grid-row: 1;
+        text-align: center;
+        line-height: 15px;
+    }
+    
+    #footerInfo p {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #footerLine {
+        grid-column: 1/4;
+        grid-row: 3;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+    
+    #footerLine a:nth-child(1), #footerLine a:nth-child(2) {
+        display: inline;
+        border-right: 1px solid white;
+        padding-right: 10px;
+        padding-left: 10px;        
+    }
+
+    #footerLine a:nth-child(3) {
+        display: inline;
+        padding-left: 10px;        
+    }
+
+    #footerLine a:nth-last-child() {
+        display: block;
+        border-right: none;   
+    }
+    
+    
+
+}
