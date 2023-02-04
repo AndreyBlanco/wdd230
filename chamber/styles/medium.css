@@ -38,7 +38,7 @@
         padding-left: 10px;        
     }
 
-    #footerLine a:nth-last-child() {
+    #footerLine a:nth-child(4) {
         display: block;
         border-right: none;   
     }
