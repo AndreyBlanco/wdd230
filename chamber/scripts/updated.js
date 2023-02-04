@@ -7,5 +7,6 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 
 const year = now.getFullYear();
 
+document.querySelector("#currentdate").textContent = `${fulldate}`;
 
 document.querySelector("#currentyear").textContent = `${year}`;
