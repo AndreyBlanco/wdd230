@@ -56,7 +56,7 @@ h1 {
 
 figcaption,
 figure,
-main { /* 1 */
+{ /* 1 */
   display: block;
 }
 
