@@ -161,7 +161,7 @@ p, .serv, .personas, .color_box, .font_box:nth-of-type(2) {
 
 .persona_header {
     display: grid;
-    grid-template-columns: 51px, 1fr;
+    grid-template-columns: 0.2fr 1fr;
     grid-template-rows: 17px 17px 17px; 
     align-items: center;
     justify-content: start;
