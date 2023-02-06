@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Event Listener - Andrey Blanco in WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+    <title>Event Listener</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="ingredients">
+        <h1>JavaScript - Event Listeners</h1>
+        <h1>Brownies</h1>
+        <h2>Ingredients</h2>
+        <form>
+            <input type="checkbox" id="butter" name="butter" value="butter">
+            <label for="butter">Butter (<span id="qb">1/2</span> cup)</label><br>
+            <input type="checkbox" id="sugar" name="sugar" value="sugar">
+            <label for="sugar">White sugar (<span id="qs">1</span> cup)</label><br>
+            <input type="checkbox" id="eggs" name="eggs" value="eggs">
+            <label for="eggs">Eggs (<span id="qe">1</span>)</label><br>
+            <input type="checkbox" id="vanilla" name="vanilla" value="vanilla">
+            <label for="vanilla">Vanilla extract (<span id="qv">1</span> teaspoon)</label><br>
+            <input type="checkbox" id="cocoa" name="cocoa" value="cocoa">
+            <label for="cocoa">Unsweetened cocoa powder (<span id="qc">1/3</span> cup)</label><br>
+            <input type="checkbox" id="flour" name="flour" value="flour">
+            <label for="flour">All-purpose flour (<span id="qf">1/2</span> cup)</label><br>
+            <input type="checkbox" id="salt" name="salt" value="salt">
+            <label for="salt">Salt (<span id="qsa">1/4</span> teaspoon)</label><br>
+            <input type="checkbox" id="baking" name="baking" value="baking">
+            <label for="baking">Baking powder (<span id="qbp">1/4</span> teaspoon)</label><br>
+        </form>
+    </div>
+    <div id="Directions">
+        <h2>Directions</h2>
+        <button id="directionButton" type="submit">SHOW STEPS</button>
+        <div id="thesteps">
+        <p>Preheat the oven to 350 degrees F (175 degrees C). Grease and flour an 8-inch square pan.</p>
+            <p>Melt 1/2 cup butter in a large saucepan. Remove from heat, and stir in sugar, eggs, and 1 teaspoon vanilla. Beat in 1/3 cup cocoa, flour, salt, and baking powder. Spread batter into prepared pan.</p>
+            <p>Bake in the preheated oven until top is dry and edges have started to pull away from the sides of the pan, about 25 to 30 minutes. Let cool briefly before frosting.</p>
+        </div>    
+    </div>
+    <div id="pictures">
+        <div id="imgbutter" class="image">
+            <img src="images/butter.jpeg" alt="butter">
+            <h3>BUTTER</h3>
+        </div>
+        <div id="imgsugar" class="image">
+            <img src="images/sugar.jpeg" alt="sugar">
+            <h3>SUGAR</h3>
+        </div>
+        <div id="imgeggs" class="image">
+            <img src="images/egg.jpeg" alt="eggs">
+            <h3>EGGS</h3>
+        </div>
+        <div id="imgvanilla" class="image">
+            <img src="images/vanilla.jpeg" alt="vanilla">
+            <h3>VANILLA</h3>
+        </div>
+        <div id="imgcocoa" class="image">
+            <img src="images/cocoa.jpeg" alt="cocoa">
+            <h3>COCOA</h3>
+        </div>
+        <div id="imgflour" class="image">
+            <img src="images/flour.jpeg" alt="flour">
+            <h3>FLOUR</h3>
+        </div>
+        <div id="imgsalt" class="image">
+            <img src="images/salt.jpeg" alt="salt">
+            <h3>SALT</h3>
+        </div>
+        <div id="imgbaking" class="image">
+            <img src="images/baking.jpeg" alt="baking">
+            <h3>BAKING</h3>
+        </div>
+    </div>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
