@@ -14,12 +14,12 @@ header,footer {
     background-color: #646464;
     color: #ffffff;
     font-family: "Merriweather", Arial, sans-serif;
-    font-size: 1.5em;
-    padding: 10px;
-    border-radius: 0 0 2em 2em;
+    font-size: 0.8em;
+    padding: 5px;
+    border-radius: 0 0 1.5em 1.5em;
     width: 80%;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,6 +28,9 @@ header,footer {
 
 header {
     display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    grid-template-rows: 75px 1fr;
+    gap: 3px;
 }
 
 footer {
@@ -42,19 +45,19 @@ footer {
     display: flex;
     align-self: center;
     justify-self: end;
-    max-width: 100px;
-    width: 12vw;
-    padding: 5px;
-    margin-right: 15px;
+    height: 65px;
+    padding: 0px;
 }
 
 #name {
     grid-column: 2/3;
-    align-self: center;
+    align-self: end;
+    padding-bottom: 5px;
 }
 
 #name h1 {
     margin: 0;
+    margin-bottom: -5px;
     padding: 0;
 }
 
@@ -68,21 +71,29 @@ footer {
     grid-column: 3/4;
     grid-row: 1;
     display: flex;
-    align-items: center;
+    align-items: end;
+    padding-bottom: 5px;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 6px;
+}
+
+#social img {
+    height: 20px;
 }
 
 #thedate {
     grid-column: 1/5;
     grid-row:2;
-    background-color: #268E00;
-    padding: 10px;
+    background: linear-gradient(90deg, rgba(38,142,0,0) 0%, rgba(38,142,0,1) 60%);
+    padding: 3px;
+    padding-right: 10px;
     color: #ffffff;
     font-family: "Raleway", Arial, Helvetica, sans-serif ;
-    width: 100%;
-    text-align: center;
-    font-size: 1em;
+    width: 50%;
+    text-align: end;
+    font-size: 1.6vh;
+    position: absolute;
+    right: 0;
 }
 
 nav ul {
@@ -117,7 +128,7 @@ nav ul.open {
 
 #navmove.move {
     grid-column: 1/5;
-    grid-row: 3;
+    grid-row: 2;
     width: 100%;
 }
 
@@ -129,13 +140,15 @@ nav ul.open {
     grid-column: 4/5;
     grid-row: 1;
     color:#ffffff;
-    font-size: 2em;
-    align-items: center;
-    justify-content: start;
+    font-size: 1.6em;
+    align-items: end;
     background-color: transparent;
     border: none;
-    width: 60px;
+    width: 50px;
     justify-self: end;
+    padding: 0;
+    padding-bottom: 3px;
+    padding-left: 5px;
 }
 
 #hamburgerBtn.open span:nth-child(1) {display: none;}
@@ -147,7 +160,6 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
     gap: 10px;
     margin: 15px;
-    height: 1200px;
 }
 
 main div {
@@ -159,6 +171,11 @@ main div {
 
 #hero {
     grid-row: 1;
+    overflow: hidden;
+}
+
+#imgHero {
+    width: 100%;
 }
 
 #event {
