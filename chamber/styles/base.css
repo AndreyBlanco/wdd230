@@ -5,9 +5,10 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 header,footer {
-	background-color: #000083;
+	background-color: rgb(0, 0, 131);
     color: white;
     font-family: "Merriweather", Arial, sans-serif;
+    background-image: "images/logoWhite.svg";
 }
 
 #add {
@@ -28,9 +29,144 @@ header,footer {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr 1fr;
-    grid-template-rows: 75px 1fr;
+    grid-template-columns: 0px 60px 4fr 1fr 1fr 0px;
+    grid-template-rows: 100px 1fr;
     gap: 3px;
+}
+
+main div {
+    background: radial-gradient(rgba(0, 0, 131,1) 0%, rgb(0, 0, 76) 100%);
+    font-family: "Merriweather", Arial, sans-serif;
+}
+
+
+h3 {
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#event {
+    padding: 10px;
+}
+
+#event h3 {
+    margin: 0;
+    padding: 5px;
+    font-size: 5vw;
+    margin-bottom: 10px;
+}
+
+#event h4 {
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+}
+
+#event p {
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#event a {
+    color: yellow;
+    font-size: 4vw;
+    text-align: center;
+}
+
+#weather {
+    color: #ffffff;
+    font-family: "Merriweather", Arial, sans-serif;
+    display:grid;
+    grid-template-columns: 1fr 0.7fr;
+    grid-template-rows: 1fr 4fr 0.5fr 0.5fr 0.5fr;
+    gap: 3px;
+    padding: 10px;
+}
+
+#weather h3 {
+    margin: 0;
+    padding: 5px;
+    font-size: 5vw;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+    
+#weather img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 80%;
+    margin: 0;
+    justify-self: center;
+}
+
+#weather a:nth-of-type(1) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15vw;
+    width: 100%;
+}
+
+#weather a:nth-of-type(2) {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: end;
+    border-bottom: 1px white solid;
+    font-size: 5vw;
+    margin: 0 10px 0 10px;
+} 
+
+#weather a:nth-of-type(3) {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: end;
+    margin: 2px;
+    padding: 0;
+    padding-right: 35px;
+    font-size: 4vw;
+    margin-top: 5px;
+}
+
+#weather a:nth-of-type(4) {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    padding-right: 35px;
+    font-size: 4vw;
+}
+
+#weather a:nth-of-type(5) {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-right: 35px;
+    font-size: 4vw;
+    margin-top: 5px;
+}
+
+#weather a:nth-of-type(6) {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    padding: 0;
+    padding-right: 35px;
+    font-size: 4vw;
 }
 
 footer {
@@ -41,34 +177,36 @@ footer {
 }
 
 #logo {
-    grid-column: 1/2;
+    grid-column: 2/3;
     display: flex;
-    align-self: center;
+    align-self: end;
     justify-self: end;
-    height: 65px;
+    height: 55px;
     padding: 0px;
+    padding-bottom: 5px;
 }
 
 #name {
-    grid-column: 2/3;
+    grid-column: 3/4;
     align-self: end;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 }
 
 #name h1 {
     margin: 0;
-    margin-bottom: -5px;
+    margin-bottom: -7px;
     padding: 0;
+    font-size: 1.5em;
 }
 
 #name a {
     margin: 0;
     padding: 0;
-    font-size: 0.6em;
+    font-size: 0.5em;
 }
 
 #social {
-    grid-column: 3/4;
+    grid-column: 4/5;
     grid-row: 1;
     display: flex;
     align-items: end;
@@ -82,16 +220,16 @@ footer {
 }
 
 #thedate {
-    grid-column: 1/5;
-    grid-row:2;
     background: linear-gradient(90deg, rgba(38,142,0,0) 0%, rgba(38,142,0,1) 60%);
     padding: 3px;
     padding-right: 10px;
+    padding-top: 8px;
     color: #ffffff;
     font-family: "Raleway", Arial, Helvetica, sans-serif ;
-    width: 50%;
+    width: 70%;
+    height: 30px;
     text-align: end;
-    font-size: 1.6vh;
+    font-size: 0.8em;
     position: absolute;
     right: 0;
 }
@@ -110,6 +248,7 @@ nav ul li a {
     color: #ffffff;
     font-family: "Merriweather", Arial, sans-serif;
     border-top: 1px solid rgba(0,0,0,0.5);
+    font-size: 0.75em;
 }
 
 nav ul li.active a {
@@ -118,7 +257,7 @@ nav ul li.active a {
 }
 
 nav ul li a:hover {
-    background-color: rgba(0,0,0,0.3);
+    background-color:  #646464;
 }
 
 nav ul {display: none;}
@@ -127,7 +266,7 @@ nav ul.open {
 }
 
 #navmove.move {
-    grid-column: 1/5;
+    grid-column: 1/6;
     grid-row: 2;
     width: 100%;
 }
@@ -137,7 +276,7 @@ nav ul.open {
 
 #hamburgerBtn {
     display: flex;
-    grid-column: 4/5;
+    grid-column: 5/6;
     grid-row: 1;
     color:#ffffff;
     font-size: 1.6em;
@@ -154,19 +293,11 @@ nav ul.open {
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
-
 main {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 0.5fr 1fr 1fr 2fr;
     gap: 10px;
     margin: 15px;
-}
-
-main div {
-    background-color: grey;
-    border: 1px black solid;
-    width: 100%;
-    height: 100%;
 }
 
 #hero {
@@ -215,8 +346,7 @@ main div {
 
 #wlogo {
     grid-column: 1/2;
-    max-width: 100px;
-    width: 15vw;
+    height: 55px;
     margin-left: 15px;
     justify-self: end;
 }
@@ -227,7 +357,7 @@ main div {
 }
 
 #footName h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0;
     padding: 0;
 }
@@ -235,17 +365,17 @@ main div {
 #footName a {
     margin: 0;
     padding: 0;
-    font-size: 0.6em;
+    font-size: 0.5em;
 }
 
 #footInfo {
     grid-column: 1/3;
     grid-row: 2;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.7em;
 }
 
-#footerInfo p {
+#footInfo p {
     padding: 0;
     margin: 0;
 }
@@ -259,10 +389,26 @@ main div {
     padding-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    font-size: 0.7em;
 }
 
 #footerLine a {
     display: block;
+}
+
+#news p {
+    font-family: "Merriweather", Arial, sans-serif;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 4vw;
+    line-height: 35px;
+}
+
+#news h3 {
+    margin-bottom: 0;
+    font-size: 5vw;
 }
 
 

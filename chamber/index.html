@@ -20,13 +20,14 @@
             <a>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</a>
         </div>
         <header>
-            <img id="logo" src="images/logo.svg" alt="Chamber logo">
+            <img id="logo" src="images/logo.webp" alt="Chamber logo">
             <div id="name">
                 <h1>La Palmera</h1>
                 <a>Chamber of Tourism and Commerce</a>
             </div>
             <nav id="navmove">
-                <ul id="primaryNav">
+                <ul id="primaryNav">                    
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Discover</a></li>
                     <li><a href="#">Directory</a></li>
                     <li><a href="#">Join</a></li>
@@ -48,13 +49,38 @@
         </header>
         
         <main>
-            <div id="event">Event</div>
-            <div id="weather">Weather</div>
-            <div id="join">Join</div>
-            <div id="hero">
-                <img id="imgHero" src="images/wdd230-org.png" alt="meeting">
+            <div id="event">
+                <h3 class="titles">Ribbon Cutting</h3>
+                <h4>💎 The Diamond Shack</h4>
+                <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m. <a href="index.html">more info...</a></p>
             </div>
-            <div id="news">News Release</div>
+            <div id="weather">
+                <h3 class="titles">Weather</h3>
+                <img id="weatherImg" src="images/pCloudy.png" alt="Partly Cloudy">
+                <a> <span id="currentTemp">33</span>°C</a>
+                <a id="weatherCondition">Partly Cloud</a>
+                <a>Wind Speed:</a>
+                <a>Wind Chill:</a>
+                <a> <span id="currentSpeed">2.5</span> km/h</a>
+                <a> <span id="currentChill">N/A</span></a>
+            </div>
+            <div id="join">
+                <button type="submit">Join Us!</button>
+                <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+            </div>
+                
+            <div id="hero">
+                <picture>
+                        <source srcset="images/wdd230-org450x300.png" media="(min-width: 800px)">
+                        <source srcset="images/wdd230-org800x533.png" media="(min-width: 560px) and (max-width: 799px)">
+                        <source srcset="images/wdd230-org560x373.png" media="(max-width: 599px)">
+                    <img id="imgHero" src="images/wdd230-org.png" alt="meeting">
+                </picture>
+            </div>
+            <div id="news">
+                <h3 class="titles">New Release</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
             <div id="spots">
                 <div class="spotlight">Spotlight 1</div>
                 <div class="spotlight">Spotlight 2</div>
@@ -63,7 +89,7 @@
         </main>
         
         <footer>
-            <img id="wlogo" src="images/logoWhite.svg" alt="Chamber logo">
+            <img id="wlogo" src="images/logoWhite.webp" alt="Chamber logo">
             <div id="footName">
                 <h2>La Palmera</h2>
                 <a> Chamber of Tourism and Commerce</a>
@@ -83,5 +109,6 @@
         </footer>
         <script src="scripts/updated.js"></script>
         <script src="scripts/scripts.js"></script>
+        <script src="scripts/windchill.js"></script>
     </body>
 </html>
