@@ -475,8 +475,7 @@ main {
 }
 
 .spotlight p:nth-of-type(2) {  
-    padding: 0;
-    text-justify: center;    
+    padding: 0;   
     display: flex;
     justify-content: center;
     font-family: "Raleway", Arial, Helvetica, sans-serif ;
