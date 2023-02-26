@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            name="description"
+            content="Chamber Site Assignment - Andrey Blanco - WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+        <title>Discovery</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <div id="add">
+            <a>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</a>
+        </div>
+        <header>
+            <img id="logo" src="images/logo.webp" alt="Chamber logo">
+            <div id="name">
+                <h1>La Palmera</h1>
+                <a>Chamber of Tourism and Commerce</a>
+            </div>
+            <nav id="navmove">
+                <ul id="primaryNav">                    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discovery.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>    
+                </ul>
+            </nav>
+            <div id="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/social_fb.svg"  alt="fb icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/social_in.svg" alt="in icon">
+                </a>
+            </div>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <div id="thedate">
+                <a id="currentdate"></a>
+            </div>
+        </header>
+        
+        <main>
+            <content id="discovery">
+                <div id="myPhotos">
+                    <h3 class="titles">Knowing La Palmera</h3>
+                    <div class="images">
+                        <picture>
+                                <source srcset="images/macaw.png" media="(min-width: 801px)">
+                                <source srcset="images/macaw400.png" media="(min-width: 560px) and (max-width: 800px)">
+                                <source srcset="images/macaw.png" media="(max-width: 559px)">
+                            <img  class="moveImg" src="images/placeholder.png" data-src="images/macaw.png" alt="Scarlet Macaw" loading="lazy">
+                        </picture>
+                        <div class="box">
+                            <p>The scarlet macaw (Ara macao) is a large yellow, red and blue Central and South American parrot, a member of a large group of Neotropical parrots called macaws. These beatifull birds fly on La Palmera's sky. Like its relative the blue-and-yellow macaw, the scarlet macaw is a popular bird in aviculture as a result of its striking plumage.</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <picture>
+                                <source srcset="images/plains.png" media="(min-width: 801px)">
+                                <source srcset="images/plains400.png" media="(min-width: 560px) and (max-width: 800px)">
+                                <source srcset="images/plains.png" media="(max-width: 559px)">
+                            <img class="moveImg" src="images/placeholder.png" data-src="images/plains.png" alt="Plains of San Carlos" loading="lazy">
+                        </picture>
+                        <div class="box">
+                            <p>This area has several protected areas, lakes, lagoons, volcanoes, rivers and waterfalls. In order to take advantage of these natural resources, there has been a thriving tourism development in services and adventure sites, for the enjoyment of nature. Its a sanctuary for aquatic birds, reptiles, mammals and the prehistoric gaspar fish.</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <picture>
+                                <source srcset="images/hotsprings.png" media="(min-width: 801px)">
+                                <source srcset="images/hotsprings400.png" media="(min-width: 560px) and (max-width: 800px)">
+                                <source srcset="images/hotsprings.png" media="(max-width: 559px)">
+                            <img class="moveImg" src="images/placeholder.png" data-src="images/hotsprings.png" alt="Hotspring" loading="lazy">
+                        </picture>                        
+                        <div class="box">
+                            <p>A hot spring, hydrothermal spring, or geothermal spring is a spring produced by the emergence of geothermally heated groundwater onto the surface of the Earth. Hot spring water often contains large amounts of dissolved minerals. Humans have made use of hot springs for bathing, relaxation, or medical therapy for thousands of years.</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <picture>
+                                <source srcset="images/school.png" media="(min-width: 801px)">
+                                <source srcset="images/school400.png" media="(min-width: 560px) and (max-width: 800px)">
+                                <source srcset="images/school.png" media="(max-width: 559px)">
+                            <img class="moveImg" src="images/placeholder.png" data-src="images/school.png" alt="School" loading="lazy">
+                        </picture>                        
+                        <div class="box">
+                            <p>Education has a major role to play in tackling inequality and Poverty, growing challenges in Costa Rica, where the poverty rate is twice the OECD average. In absolute terms, children from disadvantaged backgrounds are more likely to than ever of receiving a full school education and graduating at the university level.</p>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <picture>
+                                <source srcset="images/sport.png" media="(min-width: 801px)">
+                                <source srcset="images/sport400.png" media="(min-width: 560px) and (max-width: 800px)">
+                                <source srcset="images/sport.png" media="(max-width: 559px)">
+                            <img class="moveImg" src="images/placeholder.png" data-src="images/sport.png" alt="Sport" loading="lazy">
+                        </picture>     
+                        <div class="box">
+                            <p>Sport in Costa Rica is practiced both professionally and as an amateur, covering a large number of disciplines. The most popular sport in the country is soccer, although the most practiced is athletics. Other popular sports in the country are cycling, basketball, boxing, surfing, bowling, baseball, and swimming.</p>
+                        </div>
+                    </div>                              
+                </div>
+                <div id="data">
+                    <h3 class="titles">La Palmera District</h3>
+                    <table id="district">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">
+                                    <img src="images/location.PNG" alt="Discrict" loading="lazy">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <img src="images/country.PNG" alt="Country" loading="lazy">
+                                </td>
+                            </tr>    
+                            <tr>
+                                <th colspan="2">Location in Costa Rica</th>
+                            </tr>    
+                            <tr>
+                                <th>Coordnates:</th>
+                                <td>10.3652639°N 84.3983932°W</td>
+                            </tr>
+                            <tr class="myTable">
+                                <th scope="row" class="bold">Country</th>
+                                <td>Costa Rica</td> 
+                            </tr>
+                            <tr class="myTable">
+                                <th scope="row" class="bold">Province</th>
+                                <td>Alajuela</td> 
+                            </tr>
+                            <tr class="myTable">
+                                <th scope="row" class="bold">Canton</th>
+                                <td>San Carlos</td> 
+                            </tr>
+                            <tr class="myTable">
+                                <th scope="row" class="bold">Creation</th>
+                                <td>February 5° 1952</td> 
+                            </tr>
+                            <tr class="myTable">
+                                <th scope="row" class="bold">Total area</th>
+                                <td>100.45 km² (38.78 sq mi)</td> 
+                            </tr>
+                            <tr class="myTable">
+                                <th scope="row" class="bold">Elevation</th>
+                                <td>350m (1.150 ft)</td> 
+                            </tr>
+                            <tr class="myTable">
+                                <th scope="row"a class="bold">Population</th>
+                                <td>6 321 (63/km²)</td> 
+                            </tr>
+                            <tr class="myTable">
+                                <th scope="row" class="bold">Time Zone</th>
+                                <td>UTC-06:00</td> 
+                            </tr>
+                            <tr class="myTable">
+                                <th scope="row" class="bold">Postal code</th>
+                                <td>21009</td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="history">
+                    <h3 class="titles">History</h3>
+                    <p>
+                        The territory of La Palmera was discovered in 1858 when the German Juan Braun and Carlos Castillo,
+                        They denounced 400 hectares located between the Kooper River and San Rafael.
+                        By 1877 Teodoro Koschny and Teodoro Prestinary appear in the records as denouncers of
+                        1684 hectares adjacent to those of Braun and Carrillo.
+                    </p>
+                    <p> In 1880, Eusebio Rodríguez Quesada, Francisco Eulogio Fernández yielded to the former president of the
+                        República, Joaquín Rodríguez Zeledón the lands they had in the area. The La Marina farm is
+                        Founded in 1924 with the merger of the La Seiba and La Marina haciendas, the property was acquired by Abelardo
+                        Rojas Quesada.
+                    </p>
+                    <p>In a first stage, José Joaquín Rodríguez can be mentioned as pioneers of the area
+                        Zeledón, Alfonso Pérez, Antolin Chinchilla, Crecincia Rojas and Juan Rafael Rojas.
+                        After this, a process of colonization of the district of La Palmera began with the distribution
+                        from the farm of former president Joaquín Rodríguez and Aquileo Saborío, Emilio Paniagua and
+                        his wife Ukraine Saborío, Juan Félix Blanco Acuña, Marcelino Vargas and Ramón Cruz Lara, who
+                        they can be classified as the forgers at the head of the district.
+                        However, in addition to the founders who opened the field in the mountains, the work of the leaders Juan María Saborío, Ademar Céspedes Ulate, William Vega, among others, is also recognized.
+                    </p>
+                    <p>
+                        La Palmera acquired the category of district number nine of San Carlos in 1962. The main
+                        activity of this place is livestock, and to a lesser extent the cultivation of citrus fruits, sugar cane,
+                        roots and tubers.
+                    </p>
+                </div>
+                <div id="geography">
+                    <h3 class="titles">Geograpy</h3>
+                    <p>La Palmera has an area of 100.45 km² which makes it the eleventh district of the canton by area and a mean elevation of 350 metres.
+
+                        It is located at an elevation range between 100 and 2200 meters above sea level.
+                        
+                        It is located in the northern region of the country and borders four districts; Cutris to the north, Aguas Zarcas to the East, Florencia and y Quesada to the west. While to the south it borders with the canton of Sarchí.
+                        
+                        Its head, the town of La Palmera, is located 19.4 km (54 minutes) NE of Ciudad Quesada and 106 km (3 hours 4 minutes) to the NW of San Jose the capital of the nation.</p>
+                </div>
+                <div id="demographics">
+                    <h3 class="titles">Demographics</h3>
+                    <p>For the 2011 census, La Palmera had a population of 6,321 inhabitants. It is the tenth more populated district of the canton, behind of Quesada, Aguas Zarcas, Pital, La Fortuna, Florencia, Pocosol and Cutris.</p>
+                </div>
+                <div id="settlements">
+                    <h3 class="titles">Settlements</h3>
+                    <p>La Palmera has 6 population centers: </p>
+                    <ul>
+                        <li>La Palmera (head of the district)</li>
+                        <li>La Marina</li>
+                        <li>Santa Rosa</li>
+                        <li>Concepción</li>
+                        <li>San Francisco</li>
+                        <li>La Unión</li>
+                    </ul>
+                </div>
+                <div id="economy">
+                    <h3 class="titles">Economy</h3>
+                    <p>The main activity of this place is livestock, and in less proportion the cultivation of citrus, sugar cane, roots and tubers. There is also the exploitation of calcium carbonate.
+
+                        Tourist services are also offered in the facilities of La Marina and the thermal waters (shares sources with Aguas Zarcas) where you can appreciate the nature that characterizes the place.
+                        
+                        La Palmera urban area, has health services, educational, restaurants and grocery stores.</p>
+                </div>
+            </content>
+        </main>
+        
+        <footer>
+            <img id="wlogo" src="images/logoWhite.webp" alt="Chamber logo">
+            <div id="footName">
+                <h2>La Palmera</h2>
+                <a> Chamber of Tourism and Commerce</a>
+            </div>
+            <div id="footInfo">
+                <p>Main Street, La Palmera, San Carlos, 21009</p>
+                <p>info@lapalmeractc.go.cr</p>
+                <p>✆ +506 2345-6789</p>
+                <p>⚲ Location Map</p>
+            </div>
+            <div id="footerLine">
+                <a> &copy; <span id="currentyear"></span> La Palmera Chamber</a>
+                <a>Andrey Blanco</a>
+                <a>WDD 230 Project</a>
+                <a id="mydate"></a>
+                <a id="lastVisit"></a>
+            </div>
+        </footer>
+        <script src="scripts/updated.js"></script>
+        <script src="scripts/scripts.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </body>
+</html>

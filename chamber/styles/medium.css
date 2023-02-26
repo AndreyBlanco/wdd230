@@ -263,5 +263,11 @@
         margin-bottom: 0;
         font-size: 5vw;
     } 
-
+     
+    .box { 
+        font-size: 16px;
+        line-height: 20px;       
+        width: 320px;
+        height: 250px;
+    }
 }
