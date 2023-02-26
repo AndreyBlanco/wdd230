@@ -1,0 +1,17 @@
+body {
+    width: 350px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1f;
+    gap: 5px;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+  
+img {
+    margin: 0px 0px 0px -400px;
+    opacity: 0;
+    
+}
