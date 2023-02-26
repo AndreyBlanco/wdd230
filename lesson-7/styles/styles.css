@@ -1,9 +1,12 @@
 body {
-    width: 350px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px;
+}
+
+h1 {
+    font-size: 20px;
 }
 
 img[data-src] {
@@ -11,7 +14,7 @@ img[data-src] {
 }
   
 img {
-    margin: 0px 0px 0px -400px;
+    margin: 0px 0px 0px 800px;
     opacity: 0;
     
 }
