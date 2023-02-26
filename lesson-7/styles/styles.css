@@ -2,7 +2,7 @@ body {
     width: 350px;
     margin: auto;
     display: grid;
-    grid-template-columns: 1f;
+    grid-template-columns: 1fr;
     gap: 5px;
 }
 
