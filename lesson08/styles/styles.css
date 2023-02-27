@@ -1,0 +1,46 @@
+table {
+	margin: 10px auto;
+    border: thin rgba(0, 0, 0, 0.062) solid;
+	border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+	color: black;
+	font-size: .85rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+thead tr th:first-child {
+	background-color: black;
+	color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: thin rgba(0, 0, 0, 0.062) solid;
+}
+
+thead tr:nth-child(2) th:nth-child(n+2):nth-child(-n+4) {
+	background-color: rgb(71, 71, 71);
+	font-size: medium;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+}
+    
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: rgb(221, 221, 221);
+}
+
+tbody tr th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+}
