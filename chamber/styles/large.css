@@ -352,4 +352,60 @@
         font-family: "Merriweather", Arial, sans-serif;
         color: white;
     }
+    
+    #joinForm {
+        grid-row: 1/4;
+        grid-column: 2/3;
+        width: 250px;
+    }
+
+    form label.top input {
+        font-size: 15px;
+        border: solid 1px #268E00;
+        border-radius: 7px;
+        padding: 0.75rem;
+        width: 205px;
+    }
+    
+    form label.sbs {
+        font-size: 12px;
+        padding-left: 12px;
+        padding-top: 5px
+    }
+
+    form input.submitBtn {
+        font-size: 15px;
+    }
+
+    .textField {
+        width: 205px;
+        height: 100px;
+    }
+
+    #membership {
+        grid-row: 1/4;
+        grid-column: 3/4;
+        width: 250px;
+    }
+
+    #membership a {
+        font-size: 18px;
+    }
+    
+    .mLevel img {
+        width: 40px;
+    }
+    
+    .mLevel h2 {
+        font-size: 14px;
+    }
+    
+    .mLevel p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    #thanks {
+        grid-row: 1/4;
+        grid-column: 2/4;
 }

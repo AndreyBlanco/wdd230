@@ -270,4 +270,37 @@
         width: 320px;
         height: 250px;
     }
+
+    #joinForm {
+        grid-row: 1/6;
+        grid-column: 1/2;
+    }
+
+    #membership {
+        grid-row: 1/6;
+        grid-column: 2/3;
+    }
+
+    form input.submitBtn {
+        font-size: 15px;
+    }
+
+    .mLevel img {
+        width: 40px;
+    }
+
+    #membership a {
+        font-size: 18px;
+    }
+
+    .mLevel p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    #thanks {
+        grid-row: 1/6;
+        grid-column: 1/3;
+    }
+
 }

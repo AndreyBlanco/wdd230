@@ -590,6 +590,134 @@ tbody img {
     display: none;
 }
 
+#joinForm {
+    grid-row: 1/4;
+    background: radial-gradient(rgba(0, 0, 131,1) 0%, rgb(0, 0, 76) 100%);
+    font-family: "Merriweather", Arial, sans-serif;
+    color: white;
+    padding: 15px;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 2px solid  rgb(38, 142, 0); 
+    border-radius: 15px;
+    padding: .7rem 3%;
+    background: linear-gradient(rgba(38, 142, 0, 0) 0%, rgba(38, 142, 0, 0.7) 70%);
+}
+
+form legend {
+    color: #268E00;
+    margin: auto;
+    padding: 0 0.5rem;
+}
+
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;    
+}
+
+form label.top input {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #268E00;
+    border-radius: 7px;
+    padding: 0.75rem;
+    width: 93%;
+}
+
+.textField {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #268E00;
+    border-radius: 7px;
+    padding: 0.75rem;
+    width: 93%;
+    height: 100px;
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+}
+
+form input.submitBtn {
+    font-family: "Merriweather", Arial, sans-serif;
+    color: white;
+    font-size: 5vw;
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    width: 70%;
+    height: 45px;
+    background-color: #268E00;
+    border: none;
+    border-radius: 5px;
+}
+
+#currentDateAndTime {
+    display: none;
+}
+
+#membership {
+    grid-row: 4/6;
+    background: radial-gradient(rgba(0, 0, 131,1) 0%, rgb(0, 0, 76) 100%);
+    font-family: "Merriweather", Arial, sans-serif;
+    color: white;
+    padding: 15px;
+}
+
+#membership a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: #268E00 solid 2px;
+}
 
 
+.mLevel {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    padding-bottom: 15px;
+}
 
+.mLevel img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 60px;
+}
+
+.mLevel h2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+
+}
+
+.mLevel p {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+#thanks {
+    grid-row: 1/6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(rgba(0, 0, 131,1) 0%, rgb(0, 0, 76) 100%);
+    font-family: "Merriweather", Arial, sans-serif;
+    color: white;
+    padding: 15px 50px;
+
+}
+
+#thanks img {
+    width: 120px;
+}
