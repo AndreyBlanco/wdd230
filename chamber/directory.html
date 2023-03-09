@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            name="description"
+            content="Chamber Site Assignment - Andrey Blanco - WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+        <title>Index</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <div id="add">
+            <a>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</a>
+        </div>
+        <header>
+            <img id="logo" src="images/logo.webp" alt="Chamber logo">
+            <div id="name">
+                <h1>La Palmera</h1>
+                <a>Chamber of Tourism and Commerce</a>
+            </div>
+            <nav id="navmove">
+                <ul id="primaryNav">                    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="#">Contact</a></li>    
+                </ul>
+            </nav>
+            <div id="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/social_fb.svg"  alt="fb icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/social_in.svg" alt="in icon">
+                </a>
+            </div>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <div id="thedate">
+                <a id="currentdate"></a>
+            </div>
+        </header>
+        
+        <main>
+            <div id="direct">
+                <div id="dirmenu">
+                    <h1>Directory of Members</h1>
+                    <button id="grid">▦ Grid</button>
+                    <button id="list">▤ List</button>
+                </div>
+                <directory class="grid">
+
+                </directory>           
+            </div>
+        </main>
+        
+        <footer>
+            <img id="wlogo" src="images/logoWhite.webp" alt="Chamber logo">
+            <div id="footName">
+                <h2>La Palmera</h2>
+                <a> Chamber of Tourism and Commerce</a>
+            </div>
+            <div id="footInfo">
+                <p>Main Street, La Palmera, San Carlos, 21009</p>
+                <p>info@lapalmeractc.go.cr</p>
+                <p>✆ +506 2345-6789</p>
+                <p>⚲ Location Map</p>
+            </div>
+            <div id="footerLine">
+                <a> &copy; <span id="currentyear"></span> La Palmera Chamber</a>
+                <a>Andrey Blanco</a>
+                <a>WDD 230 Project</a>
+                <a id="mydate"></a>
+                <a id="lastVisit"></a>
+            </div>
+        </footer>
+        <script src="scripts/updated.js"></script>
+        <script src="scripts/scripts.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </body>
+</html>

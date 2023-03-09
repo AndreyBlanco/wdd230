@@ -1,0 +1,182 @@
+[
+    {
+        "name": "Estrella HotSprings",
+        "direction": "Concepcion, La Palmera",
+        "phone": "8926-0716",
+        "web": "termalesestrella.com",
+        "href": "https://www.termalesestrella.com",
+        "icon": "estrella.png",
+        "membership": "NP"
+    },
+    {
+        "name": "La Cascada HotSprings",
+        "direction": "Concepcion, La Palmera",
+        "phone": "6060-0488",
+        "web": "facebook.com",
+        "href": "https://www.facebook.com/termaleslacascada",
+        "icon": "cascada.png",
+        "membership": "Bronze"
+    },
+    {
+        "name": "La Hermosa HotSprings",
+        "direction": "Cooper, La Palmera",
+        "phone": "8376-6674",
+        "web": "facebook.com",
+        "href": "https://www.facebook.com/TermalesAguaHermosaSC/",
+        "icon": "hermosa.png",
+        "membership": "Silver"
+    },
+    {
+        "name": "Villa HotSprings",
+        "direction": "Concepcion, La Palmera",
+        "phone": "6203-1590",
+        "web": "airbnb.co.cr",
+        "href": "https://www.airbnb.co.cr/rooms/815953908353441076?_set_bev_on_new_domain=1677970991_ZDM4ZTljNjNjNDM5&source_impression_id=p3_1677970994_39DnvEM1tGGrYvxW",
+        "icon": "villas.png",
+        "membership": "Gold"
+    },
+    {
+        "name": "Dr Paradise",
+        "direction": "Cooper, La Palmera",
+        "phone": "2100-8821",
+        "web": "drparadisecr.com",
+        "href": "https://www.drparadisecr.com",
+        "icon": "paradise.png",
+        "membership": "NP"
+    },
+    {
+        "name": "Mini Super Amber",
+        "direction": "Concepcion, La Palmera",
+        "phone": "8406-0267",
+        "web": null,
+        "href": null,
+        "icon": "amber.png",
+        "membership": "Bronze"
+    },
+    {
+        "name": "La Paz Fruit Company",
+        "direction": "Cerro Cortez, La Palmera",
+        "phone": "2747-8000",
+        "web": "lapazfruits.com",
+        "href": "https://www.lapazfruits.com",
+        "icon": "paz.png",
+        "membership": "Silver"
+    },
+    {
+        "name": "Servicentro Cerro Cortez",
+        "direction": "Cerro Cortez, La Palmera",
+        "phone": "4000-2801",
+        "web": "facebook.com",
+        "href": "https://www.facebook.com/servicentro.cerro.cortes/",
+        "icon": "cc.png",
+        "membership": "Gold"
+    },
+    {
+        "name": "Llantas del Pacifico",
+        "direction": "Cerro Cortez, La Palmera",
+        "phone": "2474-7050",
+        "web": "llantasdelpacifico.co.cr",
+        "href": "https://llantasdelpacifico.co.cr/",
+        "icon": "llantas.png",
+        "membership": "NP"
+    },
+    {
+        "name": "Finca Costa Rica",
+        "direction": "San Francisco, La Palmera",
+        "phone": "2747-8242",
+        "web": "fincacostarica.org",
+        "href": "https://fincacostarica.org/",
+        "icon": "finca.png",
+        "membership": "Bronze"
+    },
+    {
+        "name": "Tecno RD",
+        "direction": "San Francisco, La Palmera",
+        "phone": "8555-6609",
+        "web": "trdsoporte.wixsite.com",
+        "href": "https://trdsoporte.wixsite.com/info/nosotros",
+        "icon": "tecno.png",
+        "membership": "Silver"
+    },
+    {
+        "name": "JR Dental",
+        "direction": "San Francisco, La Palmera",
+        "phone": "2747-7008",
+        "web": null,
+        "href": null,
+        "icon": "dental.png",
+        "membership": "Gold"
+    },
+    {
+        "name": "Casa Bali",
+        "direction": "La Palmera, La Palmera",
+        "phone": "8817-0000",
+        "web": "casa-bali.negocio.site/",
+        "href": "https://casa-bali.negocio.site/",
+        "icon": "bali.png",
+        "membership": "NP"
+    },
+    {
+        "name": "Priscake",
+        "direction": "La Palmera, La Palmera",
+        "phone": "8438-3298",
+        "web": null,
+        "href": null,
+        "icon": "priscakes.png",
+        "membership": "Bronze"
+    },
+    {
+        "name": "Moto Repuestos Conejo",
+        "direction": "Santa Rosa, La Palmera",
+        "phone": "8503-0798",
+        "web": null,
+        "href": null,
+        "icon": "conejo.png",
+        "membership": "Silver"
+    },
+    {
+        "name": "El Patio",
+        "direction": "Santa Rosa, La Palmera",
+        "phone": "8986-1102",
+        "web": "facebook.com",
+        "href": "https://www.facebook.com/ElPatio.LaPalmera",
+        "icon": "patio.png",
+        "membership": "Gold"
+    },
+    {
+        "name": "Tilapias Quecos",
+        "direction": "La Marina, La Palmera",
+        "phone": "8984-1682",
+        "web": "facebook.com",
+        "href": "https://www.facebook.com/RestauranteTilapiasQuecos",
+        "icon": "quecos.png",
+        "membership": "NP"
+    },
+    {
+        "name": "Madeformas",
+        "direction": "La Marina, La Palmera",
+        "phone": "2474-3614",
+        "web": "facebook.com",
+        "href": "https://www.facebook.com/Madeformascr/",
+        "icon": "madeformas.png",
+        "membership": "Bronze"
+    },
+    {
+        "name": "Jem Boutique",
+        "direction": "La Palmera, La Palmera",
+        "phone": "8583-1965",
+        "web": "modajem.com",
+        "href": "https://modajem.com/",
+        "icon": "jem.png",
+        "membership": "Silver"
+    },
+    {
+        "name": "Rancho Anonimos",
+        "direction": "San Francisco, La Palmera",
+        "phone": "8891-6415",
+        "web": "sites.google.com",
+        "href": "https://sites.google.com/view/ranchoanonimos/inicio",
+        "icon": "anonimos.png",
+        "membership": "Gold"
+    }    
+]
