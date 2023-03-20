@@ -68,12 +68,11 @@
         grid-column: 2/4;
     }
 
-    #hero button{
+    #hero a{
         font-size: 14px;
-        display: block;
         margin: auto;
         margin-top: 50px;
-        width: 70%;
+        width: 40%;
         height: 35px;
     }
 
@@ -228,7 +227,7 @@
         font-size: 0.5em;
     }    
 
-    #join button{
+    #join a{
         font-size: 14px;
         margin-top: 18px;
         height: 35px;

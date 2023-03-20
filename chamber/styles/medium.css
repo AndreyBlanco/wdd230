@@ -56,12 +56,11 @@
         grid-column: 1/3;
     }
 
-    #hero button{
+    #hero a{
         font-size: 20px;
-        display: block;
         margin: auto;
         margin-top: 50px;
-        width: 70%;
+        width: 40%;
         height: 35px;
     }
 
@@ -223,19 +222,27 @@
         padding-right: 0;
     }
 
-    #join button{
+    #join a{
         font-family: "Merriweather", Arial, sans-serif;
         color: white;
-        font-size: 5vw;
-        display: block;
+        text-decoration: none;
+        font-size: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin: auto;
-        margin-top: 40px;
-        width: 70%;
-        height: 80px;
+        margin-top: 0;
+        width: 60%;
+        height: 45px;
         background-color: #268E00;
         border: none;
         border-radius: 5px;
     }
+
+    #join a:hover {
+        color:#000083;
+    }
+    
 
     
     #join p {
