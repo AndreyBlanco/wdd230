@@ -39,6 +39,7 @@ function displayResults(weatherData) {
     document.getElementById('weatherCondition').textContent = desc;
     document.getElementById('currentSpeed').textContent = speed;
     document.getElementById('weatherImg').src = `images/weatherImages/${icon}.png`;
+    document.getElementById('weatherImg').alt = desc;
 }
 
 

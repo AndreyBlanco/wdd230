@@ -30,6 +30,7 @@ header {
 
 h3 {
     color: yellow;
+    background-color: none;
     display: flex;
     align-items: center;
     justify-content: center;
