@@ -334,7 +334,6 @@
         display: block;
         width: 260px;
         height: 160px;
-        background-color: #268E00;
         border: none;
         border-radius: 5px;
     }
@@ -379,7 +378,7 @@
         height: 100px;
     }
 
-    #membership {
+    #membership, #direction {
         grid-row: 1/4;
         grid-column: 3/4;
         width: 250px;
@@ -387,6 +386,14 @@
 
     #membership a {
         font-size: 18px;
+    }
+
+    #district th {
+        font-size: 12px;
+    }
+
+    #district td {
+        font-size: 12px;
     }
     
     .mLevel img {

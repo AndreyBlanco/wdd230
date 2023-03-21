@@ -283,7 +283,7 @@
         grid-column: 1/2;
     }
 
-    #membership {
+    #membership, #direction {
         grid-row: 1/6;
         grid-column: 2/3;
     }
@@ -298,6 +298,14 @@
 
     #membership a {
         font-size: 18px;
+    }
+
+    #district th {
+        font-size: 16px;
+    }
+
+    #district td {
+        font-size: 16px;
     }
 
     .mLevel p {
