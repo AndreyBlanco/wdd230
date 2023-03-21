@@ -136,9 +136,14 @@
         gap: 5px;
     }
     
-    .spotlight p {
+    .spotlight h4 {
         font-size: 9px;
     }
+
+    .spotlight img {
+        width: 85px;
+    }
+
     .spotlight:nth-of-type(1) {
         grid-row: 1;
         grid-column: 1;
@@ -266,29 +271,29 @@
         font-size: 15px;
     }
 
-    .spotlight h6 {
+    .spotlight h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .spotlight h3 {
         font-size: 9px;
         padding:0;
         margin: 5px 0 ;
     }
 
-    .spotlight:nth-of-type(2) h6 {
+    .spotlight:nth-of-type(2) h3 {
         font-size: 9px;
         padding: 0 10px;
-        margin: 5px 0 5px 1.5vw;
     }
 
-    .spotlight p:nth-of-type(1) {    
+    .spotlight h4{    
         padding: 0;
         margin: 0;
         padding-top: 5px;
     }
-    
-    .spotlight p:nth-of-type(2) {  
-        padding: 0;
-        margin: 0;
-        
-    }
+   
+
     
     #discovery {
         grid-column: 1/5;
