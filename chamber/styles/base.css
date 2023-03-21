@@ -920,3 +920,7 @@ form input.submitBtn {
     background-color: transparent;
 }
 
+#hidden {
+    display: none;
+}
+
