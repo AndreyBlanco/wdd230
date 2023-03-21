@@ -27,6 +27,7 @@ if ("IntersectionObserver" in window) {
     items.forEach((item) => {
       if (item.isIntersecting) {
         loadImages(item.target);
+        console.log("aqui", item);
         observer.unobserve(item.target);
       }
     });
