@@ -924,3 +924,7 @@ form input.submitBtn {
     display: none;
 }
 
+.toHide {
+    color: rgba(0,0,0,0);
+    font-size: 0.1px;
+}

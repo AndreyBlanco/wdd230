@@ -31,6 +31,5 @@ if ("IntersectionObserver" in window) {
 
   imagesToLoad.forEach((img) => {
     loadImages(img);
-
   });
 }
