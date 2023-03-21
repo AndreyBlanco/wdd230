@@ -11,7 +11,7 @@ getDirectoryData();
 
 function displayDirectory(data)
 {
-  const members = document.querySelector('directory');
+  const members = document.querySelector('#directory');
 
     data.forEach((business) => {
       
@@ -54,7 +54,7 @@ function displayDirectory(data)
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("directory");
+const display = document.querySelector("#directory");
 
 gridbutton.addEventListener("click", showGrid);
 
