@@ -55,32 +55,33 @@
         </div>
         <main>
             <div id="joinForm">
+                <img class="leafs" src="images/leafs.svg" alt="leafs">
                 <h2>Fruits Mix Form</h2>
-                <form method="get" action="thankyou.html">
-                    <fieldset>
+                <form id="mixForm" method="get" action="">
+                    <fieldset id="personalInfo">
                         <legend>Personal Information</legend>
                         <label class="top">First Name* <input type="text" name="fname" required></label>
                         <label class="top">E-mail* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
                         <label class="top">Cell Phone* <input type="tel" name="tel" required></label>
-                        <label class="top" id="hidden"><input type="hidden" id="submissionTime" name="submissionTime"/>Time</label>
+                        <label class="top" id="hidden"><input type="hidden" id="order" name="order"/>Order</label>
                     </fieldset>
-                    <fieldset>
-                        <label for="iOne">Choose the First Ingredient:</label>
+                    <fieldset id="ingOne">
+                        <label for="iOne">Choose the 1st Ingredient:</label>
                         <select id="iOne" name="iOne"></select>
                     </fieldset>
-                    <fieldset>
-                        <label for="iTwo">Choose the Second Ingredient:</label>
+                    <fieldset id="ingTwo">
+                        <label for="iTwo">Choose the 2nd Ingredient:</label>
                         <select id="iTwo" name="iTwo"></select>
                     </fieldset>
-                    <fieldset>
-                        <label for="iThree">Choose the Third Ingredient:</label>
+                    <fieldset id="ingThree">
+                        <label for="iThree">Choose the 3rd Ingredient:</label>
                         <select id="iThree" name="iThree"></select>
                     </fieldset>
-                    <fieldset>
+                    <fieldset id="specialInst">
                         <legend>Special Instructions</legend>
                         <label class="toHide"><textarea class="textField" name="desc" placeholder="Please, add special instructions">Please, add special instructions</textarea></label>
                     </fieldset>
-                    <div>
+                    <div id="sub">
                         <input type="submit" value="Go to Mix" class="submitBtn">
                     </div>                    
                 </form>
