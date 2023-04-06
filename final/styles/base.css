@@ -232,15 +232,21 @@ main {
 #more {
     display: flex;
     margin-right: 20px;
+    justify-content: right;
 }    
 
-#more a {
+#more button {
     font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
     color:#5B8B30;
-    width: 100%;
-    text-align: right;
+    background-color: transparent;
+    border: none;
+    width: 150px;
+}
+
+#more button:hover {
+    color:#F49912;
 }
 
 #drink {

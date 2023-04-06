@@ -1,21 +1,27 @@
 const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 
+let productsCount = 0;
+let data;
+
 async function getProductsData() {
     const response = await fetch(url);
-    const data = await response.json();
+    data = await response.json();
     console.table(data);
+    for (let index = 0; index < data.length; index++) {
+        productsCount = productsCount + 1;        
+    }
     displayProducts(data);
 }
 
-
-var count = 12;
 getProductsData();
 
+var count = 12;
+var countRest = 12;
+let cards = document.querySelector('#productList');
+
 const displayProducts = (products) => {
-    const cards = document.querySelector('#productList'); 
-    
-    
-    for (let index = count - 12; index < count; index++){
+           
+    for (let index = count - 12; index < countRest; index++){
       
       let card = document.createElement('section');
       let h2 = document.createElement('h2');
@@ -36,4 +42,35 @@ const displayProducts = (products) => {
   
       cards.appendChild(card);
     };
+}
+
+document.getElementById("seeMore").addEventListener('click', moreProducts);
+
+function moreProducts()
+{
+    console.log("Estoy acá");
+    console.log(count, productsCount);
+    
+    if (count + 12 < productsCount)
+    {
+        count = count + 12;
+        countRest = count;
+        while (cards.firstChild) {
+           cards.removeChild(cards.firstChild);
+        }
+        displayProducts(data);
+    }
+    else
+    {
+        count = count + 12;
+        countRest = productsCount;
+        while (cards.firstChild) {
+            cards.removeChild(cards.firstChild);
+        }
+        displayProducts(data);
+        countRest = (count - productsCount);
+        count = 12;
+        displayProducts(data);
+        count = countRest;
+    }
 }
