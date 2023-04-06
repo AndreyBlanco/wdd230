@@ -1,0 +1,466 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+
+header {
+    display: grid;
+    grid-template-columns: 1.5fr 0.1fr 0.1fr;
+    grid-template-rows: 100px 1fr;
+}
+
+#headLogo {
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#logo {
+    width: 160px;
+    margin-left: 1.2rem;
+}
+
+#social {
+    grid-column: 2/3;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 0;
+}
+
+#social img {
+    width: 28px;
+    margin: 0 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+nav ul li a {
+    border: none;
+    padding: 0 2.1rem;
+    font-family: Alatsi, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #5b8b30;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color:  #FEC70D;
+}
+
+nav ul {display: none;}
+nav ul.open {
+    display: block;
+}
+
+#navmove.move {
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn {
+    display: flex;
+    grid-column: 3/4;
+    grid-row: 1;
+    color: #F49912;
+    font-size: 1.6em;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    justify-self: end;
+    padding: 0;
+    padding-left: 1rem;
+}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+#dommy {
+    width: 100%;
+}
+
+/*HERO*/
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.3fr 1fr;
+}
+
+#hero-box {
+    height: 250px;
+    overflow: hidden;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#imgHero {
+    width: 100%;
+    margin-top: -10px;
+}
+
+#hero-msg {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    margin: auto;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-title {
+    font-family: Delicious Handrawn, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    margin: 0;
+    padding-left: 25px;
+}
+
+#hero-msg p {
+    margin: 0;
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: white;
+    background-color: #5b8b30;
+    padding: 10px 25px;
+    padding-bottom: 40px;
+}
+
+#hero-msg a {
+    background-color: #F49912;
+    padding: 10px;
+    color: white;
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    align-self: center;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    border-radius: 5%;
+    width: 120px;
+    text-align: center;
+}
+
+/*MAIN*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.leafs {
+    width: 30px;
+    display: inline;
+    margin-left: 10px;
+}
+
+.headings {
+    font-family: Alatsi, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #F49912;
+    display: inline;
+}
+
+#products, #fruitMix, #weather {
+    margin: 10px 0;
+}
+
+#more {
+    display: flex;
+    margin-right: 20px;
+}    
+
+#more a {
+    font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color:#5B8B30;
+    width: 100%;
+    text-align: right;
+}
+
+#drink {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#steps {
+    background-color: #F49912;
+    width: 95%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#steps-img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+#steps-img img {
+    width: 100%;
+
+}
+
+#steps div {
+    display: flex;
+    flex-direction: row;
+}
+
+#steps h2 {
+    font-family: Delicious Handrawn, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+    margin: 5px;        
+}
+
+#go {
+    background-color: #FEC70D;
+    color: #5B8B30;
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    align-self: center;
+    border-radius: 5%;
+    width: 120px;
+    text-align: center;
+    text-justify: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#steps div a {
+    font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 20px;
+    padding-left: 10px;
+} 
+
+#count {
+    font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #5B8B30;
+}
+
+#count span {
+    font-weight: bold;       
+}
+
+#days {
+    background-color: #5B8B30;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.15fr 0.73fr 0.15fr 1fr;
+    gap: 7px;
+    padding: 8px;
+}
+
+#weatherImg {
+    grid-column: 1/4;
+    grid-row:1/3;
+    margin: auto;
+    width: 100%;
+}
+
+.small {
+    height: 40px;
+}
+
+.wDate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    color: #FEC70D;
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+
+#weatherCondition {
+    grid-column: 4/7;
+    grid-row: 1/2;
+    color: white;
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+
+#currentDay {
+    grid-column: 4/7;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+
+#currentDay a:nth-of-type(1) {
+    color: #FEC70D;
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin: 5px;
+    margin-left: 0;
+}
+
+#currentDay a:nth-of-type(2) {
+    color: white;
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+#currentDay a:nth-of-type(n+3):nth-of-type(-n+5) {
+    color: white;
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+#days h3 {
+    grid-column: 1/7;
+    grid-row: 3/4;
+    margin: auto;
+    color: #F49912;
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+
+#nextFirstDay, #nextSecondDay, #nextThirdDay {
+    display: flex;
+    flex-direction: column;
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 1rem;
+    grid-row: 4/5;
+}
+
+#nextFirstDay {
+    grid-column: 1/3;
+    border-right: #FEC70D solid 3px;
+}
+
+#nextSecondDay {
+    grid-column: 3/5;
+    border-right: #FEC70D solid 3px;
+}
+
+#nextThirdDay {
+    grid-column: 5/7;
+}
+
+/*FOOTER*/
+
+footer {
+    background: #F49912;
+    display: flex;
+    flex-direction: column;
+}
+
+#footLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+#footNav {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#footNav a {
+    border: none;
+    padding: 0 1.5rem;
+    font-family: Alatsi, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+#footMail {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#footSocial {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 10px;
+    color: white;
+    font-family: Alatsi, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+#footSocial a {
+    padding: 0 0.2rem;
+}
+
+#footLine {
+    display: flex;
+    align-items: start;
+    padding-top: 10px;
+    margin: 10px 0;
+    justify-content: center;
+    border-top: white solid 2px;
+    flex-direction: column;
+}
+
+#footLine a {
+    color: white;
+    font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    align-self: center;
+}
+
+#wlogo {
+    width: 160px;
+}
+
+#footSocial img {
+    width: 28px;
+    margin: 0 0.8rem;
+}
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            name="description"
+            content="Bountiful Foods - Andrey Blanco - WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+        <title>Index</title>
+        <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Bai+Jamjuree&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <div id="headLogo">
+                <img id="logo" src="images/logo.svg" alt="Bountiful Foods Logo">
+            </div>
+            <nav id="navmove">
+                <ul id="primaryNav">                    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about.html">About Us</a></li> 
+                </ul>
+            </nav>
+            <div id="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/social_fb.svg"  alt="facebook icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/social_ig.svg" alt="instagram icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/social_tw.svg" alt="twitter icon">
+                </a>
+            </div>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        </header>
+        <div id="hero">
+            <div id="hero-box">
+                <picture>
+                        <source srcset="images/field.png" media="(min-width: 800px)">
+                        <source srcset="images/field-800.png" media="(min-width: 560px) and (max-width: 799px)">
+                        <source srcset="images/field-560.png" media="(max-width: 559px)">
+                    <img id="imgHero" src="images/field.png" alt="field">
+                </picture>
+            </div>
+            <section id="hero-msg">
+                <h1 class="home-title">Salinas</h1>
+                <p>Salinas serves as the main business, governmental, and industrial center of the region. The marine climate is ideal for the floral industry, grape vineyards, and vegetable growers. Salinas is known as the "Salad Bowl of the World" for its large, vibrant agriculture industry.</p>
+                <a href="about.html">More Info</a>
+            </section>
+        </div>
+        <main>
+            <div id="products">   
+                <img class="leafs" src="images/leafs.svg" alt="leafs">
+                <h2 class="headings">Knowing our products</h2>
+                <div id="productList"></div>
+                <div id="more">
+                    <a>See more...</a>
+                </div>    
+            </div>
+            <div id="fruitMix">   
+                <img class="leafs" src="images/leafs.svg" alt="leafs">
+                <h2 class="headings">Make your own drink fruits</h2>
+                <div id="drink">
+                    <div id="steps">
+                        <div>
+                            <img class="leafs" src="images/leafsY.svg" alt="leafs">
+                            <h2>Step 1</h2>
+                            <a>Fill the form</a>
+                        </div>
+                        <div>
+                            <img class="leafs" src="images/leafsY.svg" alt="leafs">
+                            <h2>Step 2</h2>
+                            <a>Select your fruits</a>
+                        </div>
+                        <div>
+                            <img class="leafs" src="images/leafsY.svg" alt="leafs">
+                            <h2>Step 3</h2>
+                            <a>Share your instructions</a>
+                        </div>
+                        <a id="go" href="fresh.html">Go and Mix</a>
+                    </div>
+                    <div id="steps-img">
+                        <img src="images/stepImg.png" alt="mix">
+                    </div>
+                </div>
+                <a id="count">You have created <span>0</span> delicious specialities using our form.</a>
+            </div>
+            <div id="weather">   
+                <img class="leafs" src="images/leafs.svg" alt="leafs">
+                <h2 class="headings">The Weather</h2>
+                <div id="days">
+                    <img id="weatherImg" src="images/weatherImages/01d.png" alt="clear">
+                    <a id="weatherCondition">Clear</a>
+                    <div id="currentDay">
+                        <a>Temp: <span id="currentTemp"></span>°C</a>
+                        <a>Max: <span id="currentMaxTemp"></span>°C - Max: <span id="currentMinTemp"></span>°C</a>
+                        <a>Humidity: <span id="currentHumif"></span>%</a>
+                        <a>Wind: <span id="currentWind"></span>km/h</a>
+                        <a>Feels Like: <span id="currentFeel"></span>°C</a>
+                    </div>
+                    <h3>Next three days</h3>
+                    <div id="nextFirstDay">
+                        <div class="wDate">
+                            <img id="weatherFirstImg" class="small" src="images/weatherImages/01d.png" alt="clear">
+                            <h4 wFirstDate>April 8</h4>
+                        </div>
+                        <a id="weatherCondition1"> clear </a>
+                        <a>Temp: <span id="firstTemp"></span>°C</a>
+                        <a>Max: <span id="firstMaxTemp"></span>°C</a>
+                        <a>Min: <span id="firstMinTemp"></span>°C</a>
+                        <a>Humidity: <span id="firstHumif"></span>%</a>
+                        <a>Wind: <span id="firstWind"></span>km/h</a>
+                        <a>Feels Like: <span id="firstFeel"></span>°C</a>
+                    </div>
+                    <div id="nextSecondDay">
+                        <div class="wDate">
+                            <img id="weatherSecondImg" class="small" src="images/weatherImages/01d.png" alt="clear">
+                            <h4 wFirstDate>April 9</h4>
+                        </div>
+                        <a id="weatherCondition2"> clear </a>
+                        <a>Temp: <span id="secondTemp"></span>°C</a>
+                        <a>Max: <span id="secondMaxTemp"></span>°C</a>
+                        <a>Min: <span id="firstMinTemp"></span>°C</a>
+                        <a>Humidity: <span id="secondHumif"></span>%</a>
+                        <a>Wind: <span id="secondWind"></span>km/h</a>
+                        <a>Feels Like: <span id="secondFeel"></span>°C</a>
+                    </div>
+                    <div id="nextThirdDay">
+                        <div class="wDate">
+                            <img id="weatherThirdImg" class="small" src="images/weatherImages/01d.png" alt="clear">
+                            <h4 wFirstDate>April 10</h4>
+                        </div>
+                        <a id="weatherCondition2"> clear </a>
+                        <a>Temp: <span id="thirdTemp"></span>°C</a>
+                        <a>Max: <span id="thirdMaxTemp"></span>°C</a>
+                        <a>Min: <span id="firstMinTemp"></span>°C</a>
+                        <a>Humidity: <span id="thirdHumif"></span>%</a>
+                        <a>Wind: <span id="thirdWind"></span>km/h</a>
+                        <a>Feels Like: <span id="thirdFeel"></span>°C</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footLogo">
+                <img id="wlogo" src="images/logoWhite.svg" alt="Bountiful Foods Logo">
+            </div>
+            <div id="footNav">
+                <a href="index.html">Home</a>
+                <a href="Fresh.html">Fresh</a>
+                <a href="About.html">About Us</a>
+            </div>
+            <div id="footMail">
+                <a>info@bountifulfoods.com</a>
+            </div>
+            <div id="footSocial">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/social_fb.svg"  alt="facebook icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/social_ig.svg" alt="instagram icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/social_tw.svg" alt="twitter icon">
+                </a>
+            </div>
+            <div id="footLine">
+                <a> &copy; <span id="currentyear"></span> Andrey Blanco</a>
+                <a>WDD 230 Final Project</a>
+                <a id="mydate"></a>
+                <a id="lastVisit"></a>
+            </div>
+        </footer>
+        <script src="scripts/updated.js"></script>
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>

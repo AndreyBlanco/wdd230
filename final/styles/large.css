@@ -1,0 +1,279 @@
+@media only screen and (min-width: 800px) {
+    /*HEADER*/
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr 0.55fr 0fr;
+        height: 100px;
+    }
+
+    #headLogo {
+        grid-column: 1/2;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    #logo {
+        width: 160px;
+        margin-left: 3.2rem;
+    }
+
+    #navmove {
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: end;
+        font-size: 1em;
+    }
+
+    #social {
+        grid-column: 3/4;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-right: 0.6rem;
+    }
+
+    #social img {
+        width: 28px;
+        margin: 0 1.3rem;
+    }
+
+    #hamburgerBrn {
+        grid-column: 4/5;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        padding: 0;
+    }
+
+    nav ul li a {
+        padding: 0 2rem;
+        font-size: 1.2rem;
+    }
+
+    #hamburgerBtn {
+        display: none;
+    }
+
+    /*HERO*/
+
+    #hero {
+        display: grid;
+        grid-template-columns: 1fr 0.8fr;
+        grid-template-rows: 1fr;
+    }
+    
+    #hero-box {
+        height: 450px;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    
+    #imgHero {
+        width: 120%;
+        margin-top:-20%;
+    }
+    
+    #hero-msg {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: auto;
+        margin-left: 0;
+        width: 35vw;
+    }
+    
+    .home-title {
+        font-size: 5.5rem;
+        margin: 0;
+        padding-left: 0;
+    }
+    
+    #hero-msg p {
+        padding: 10px;
+        font-size: 0.9rem;
+        background-color: #5a8b30bf;
+    }
+    
+    #hero-msg a {
+        margin-top: 10px;
+        margin-bottom: 0;
+        border-radius: 5%;
+    }
+
+    /*MAIN*/
+
+    main {
+        width: 75%;
+    }
+
+    .leafs {
+        margin: 0;
+    }
+
+    .headings {
+        font-size: 2.5rem;
+    }
+
+    #products, #fruitMix, #weather {
+        margin: 20px 0;
+    }
+
+    #more {
+        display: flex;
+        margin-right: 0;
+    }    
+    
+    #more a {
+        font-size: 1.2rem;
+    }
+
+    #drink {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+    }
+
+    #steps {
+        width: 38%;
+    }
+
+    #steps-img {
+        width: 62%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+
+    #steps-img img {
+        width: 150%;
+    }
+
+    #steps div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #steps h2 {
+        font-size: 1.6rem;
+        margin: 10px 5px;        
+    }
+
+    #steps div a {
+        font-size: 0.7rem;
+        padding-top: 27px;
+        padding-left: 0;
+    } 
+
+    #count {
+        font-size: 1.2rem;
+    }
+
+    #days {
+        display: grid;
+        grid-template-columns: 1.2fr 1.4fr 1fr 1fr 1fr;
+        grid-template-rows: 0.15fr 1fr 0.15fr;
+    }
+
+    #weatherImg {
+        grid-column: 1/2;
+        max-width: 140px;
+    }
+
+    #weatherCondition {
+        grid-column: 1/2;
+        grid-row:3/4;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+
+    #currentDay {
+        grid-column: 2/3;
+        grid-row:1/4;
+        border-right: #FEC70D solid 3px;
+    }
+
+    #days h3 {
+        grid-column: 3/6;
+        grid-row: 1/2;
+        margin: 0;
+    }
+
+    #nextFirstDay, #nextSecondDay, #nextThirdDay {
+        font-size: 0.7rem;
+        grid-row: 2/4;
+    }
+
+    #nextFirstDay {
+        grid-column: 3/4;
+    }
+
+    #nextSecondDay {
+        grid-column: 4/5;
+    }
+
+    #nextThirdDay {
+        grid-column: 5/6;
+    }
+
+    /*FOOTER*/
+
+    footer {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 1.3fr 1.5fr 1fr 0.3fr;
+        grid-template-rows: 100px 50px;
+    }
+
+    #footLogo {
+        grid-column: 2/3;
+        margin: 0;
+    }
+
+    #footNav {
+        grid-column: 3/4;
+    }
+
+    #footNav a {
+        padding: 0 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    #footMail {
+        grid-column: 4/5;
+        font-size: 0.9rem;
+    }
+
+    #footSocial {
+        grid-column: 5/6;
+    }
+
+    #footSocial a {
+        padding: 0 2%;
+    }
+
+    #footLine {
+        grid-column: 2/6;
+        grid-row: 2/3;
+        margin: 0;
+        flex-direction: row;
+    }
+
+    #footLine a {
+        font-size: 1rem;
+        display: inline;
+        padding: 0 10px;
+    }
+
+    #footLine a:nth-of-type(2) {
+        border-left: white solid 1px;
+        border-right: white solid 1px;
+    }    
+}
+
