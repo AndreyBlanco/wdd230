@@ -124,6 +124,12 @@
         margin: 20px 0;
     }
 
+    #productList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
     #more {
         display: flex;
         margin-right: 0;
