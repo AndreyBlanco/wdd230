@@ -229,6 +229,81 @@
         grid-column: 5/6;
     }
 
+    /*FRESH*/
+
+    #mixForm {
+        display: grid;
+        grid-template-columns: 17% 17% 17% 49%;
+        grid-template-rows: 1fr 0.6fr 0.1fr;
+    }
+
+    #personalInfo {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    #personalInfo legend, #specialInst legend{
+        font-size: 1.5rem;
+    }
+
+    #specialInst label textarea {
+        width: 100%;
+        height: 90%;
+        font-size: 0.9rem;
+    }
+
+    .top {
+        font-size: 0.9rem;
+    }
+
+    .top input {
+        height: 25px;
+        font-size: 1rem;
+    }
+
+    #ingOne {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    #ingOne label, #ingTwo label, #ingThree label {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    #ingOne select, #ingTwo select, #ingThree select {
+        font-size: 0.9rem;
+        height: 30px;
+        width: 95%;
+        margin-bottom: 0;
+    }
+
+    #ingTwo {
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+
+    #ingThree {
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+
+    #specialInst {
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+
+    #sub {
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+
+    #sub input{
+        font-size: 1.2rem;
+        height: 50px;
+        width: 150px;
+    }
+
     /*FOOTER*/
 
     footer {
