@@ -6,7 +6,6 @@ let data;
 async function getProductsData() {
     const response = await fetch(url);
     data = await response.json();
-    console.table(data);
     for (let index = 0; index < data.length; index++) {
         productsCount = productsCount + 1;        
     }
