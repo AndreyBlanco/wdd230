@@ -307,7 +307,7 @@
     #confirmationForm {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 110px 130px 200px;
+        grid-template-rows: 110px 130px auto;
     }
 
     #personalInfoConf {

@@ -1,3 +1,17 @@
+let formCount = localStorage.getItem("formCount");
+console.log(formCount);
+
+if (formCount == null)
+{
+    document.getElementById("stored").textContent = 0;
+}else{
+    document.getElementById("stored").textContent = formCount;
+}
+
+
+
+
+
 const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 
 let productsCount = 0;

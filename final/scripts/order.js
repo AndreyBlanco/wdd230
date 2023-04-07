@@ -1,5 +1,7 @@
 const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 
+let formCount = 0;
+
 let data;
 
 async function getProductsData() {
@@ -41,6 +43,8 @@ document.getElementById("subOrder").addEventListener('click', changeForms);
 
 function changeForms()
 {
+    document.getElementById("order").value = new Date();
+
     const order = document.mixForm;
     
     if (order.fname.value == null || order.fname.value.length == 0 || /^\s+$/.test(order.fname.value))
@@ -128,7 +132,7 @@ function changeForms()
         document.getElementById("p4").textContent = protein.toFixed(2);
         document.getElementById("f4").textContent = fat.toFixed(2);
         document.getElementById("cal4").textContent = calories.toFixed(2);
-        document.getElementById("s4").textContent = sugar.toFixed(2);        
+        document.getElementById("s4").textContent = sugar.toFixed(2);
         
         document.getElementById("fnameConf").textContent = `Name: ${order.fname.value}`;
         document.getElementById("emailConf").textContent = `Email: ${order.email.value}`;
@@ -136,7 +140,7 @@ function changeForms()
         document.getElementById("iOneConf").textContent = order.iOne.options[iOne.selectedIndex].value;
         document.getElementById("iTwoConf").textContent = order.iOne.options[iTwo.selectedIndex].value;
         document.getElementById("iThreeConf").textContent = order.iOne.options[iThree.selectedIndex].value;
-
+        
         document.getElementById("iOneImg").setAttribute('src', `images/products/${order.iOne.options[iOne.selectedIndex].value}.jpg`);
         document.getElementById("iTwoImg").setAttribute('src', `images/products/${order.iOne.options[iTwo.selectedIndex].value}.jpg`);
         document.getElementById("iThreeImg").setAttribute('src', `images/products/${order.iOne.options[iThree.selectedIndex].value}.jpg`);
@@ -163,7 +167,24 @@ function changeForms()
 
 document.getElementById("confirmBtn").addEventListener('click', function()
 {
-    let formulario = document.getElementById('mixForm');
+    formCount = localStorage.getItem("formCount");
+
+    if (formCount == null) {
+    
+        formCount = 1;
+        localStorage.setItem("formCount", formCount);
+        let record = localStorage.getItem("formCount");
+        console.log(`Por ahora son ${record} formularios`);
+
+    } else
+    {
+        formCount = parseInt(localStorage.getItem("formCount")) + 1;
+        localStorage.setItem("formCount", formCount);
+        let record = localStorage.getItem("formCount");
+        console.log(`Por ahora son ${record} formularios`);
+    }
+    
+    let formulario = document.getElementById('mixForm');    
     formulario.submit();
 });
 

@@ -1,4 +1,4 @@
-const dirurl = 'https://api.openweathermap.org/data/2.5//weather?q=Salinas,units=imperial&appid=57fb78219987c5ecb4d912a4593a6817';
+const dirurl = 'https://api.openweathermap.org/data/2.5//weather?q=Carlsbad,units=imperial&appid=57fb78219987c5ecb4d912a4593a6817';
 
 async function apiFetch() {
     try {
