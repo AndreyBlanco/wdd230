@@ -8,10 +8,6 @@ if (formCount == null)
     document.getElementById("stored").textContent = formCount;
 }
 
-
-
-
-
 const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 
 let productsCount = 0;
@@ -57,33 +53,37 @@ const displayProducts = (products) => {
     };
 }
 
+
+const toFocus = document.querySelector("#hero-msg");
+
 document.getElementById("seeMore").addEventListener('click', moreProducts);
 
 function moreProducts()
 {
-    console.log("Estoy acá");
-    console.log(count, productsCount);
+    toFocus.focus();
     
     if (count + 12 < productsCount)
     {
         count = count + 12;
         countRest = count;
-        while (cards.firstChild) {
+        /*while (cards.firstChild) {
            cards.removeChild(cards.firstChild);
-        }
+        }*/
         displayProducts(data);
     }
     else
     {
         count = count + 12;
         countRest = productsCount;
-        while (cards.firstChild) {
+        /*while (cards.firstChild) {
             cards.removeChild(cards.firstChild);
-        }
+        }*/
         displayProducts(data);
         countRest = (count - productsCount);
         count = 12;
         displayProducts(data);
         count = countRest;
     }
+
+    
 }
