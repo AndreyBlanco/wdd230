@@ -69,20 +69,40 @@ function changeForms()
     }
     else
     {
-        let name = order.fname.value;
-        let email = order.email.value;
-        let phone = order.tel.value;
-        let one = order.iOne.options[iOne.selectedIndex].value;
-        let two = order.iOne.options[iTwo.selectedIndex].value;
-        let three = order.iOne.options[iThree.selectedIndex].value;
-        let desc = order.desc.textContent;
-        if (desc == "Please, add special instructions");
+        document.getElementById("fnameConf").textContent = order.fname.value;
+        document.getElementById("emailConf").textContent = order.email.value;
+        document.getElementById("telConf").textContent = order.tel.value;
+        document.getElementById("iOneConf").textContent = order.iOne.options[iOne.selectedIndex].value;
+        document.getElementById("iTwoConf").textContent = order.iOne.options[iTwo.selectedIndex].value;
+        document.getElementById("iThreeConf").textContent = order.iOne.options[iThree.selectedIndex].value;
+        
+
+        if (order.desc.value == "Please, add special instructions")
         {
-            desc = "No special instructions added."
+            document.getElementById("descConf").textContent = "No special instructions added.";
         }
-        let formulario = document.getElementById('mixForm');
-        formulario.submit();
+        else
+        {
+            document.getElementById("descConf").textContent = order.desc.value;
+        }
+
+        document.getElementById("joinForm").style.display = "none";
+        document.getElementById("confirmation").style.display = "block";
+
+        /*
+        */
     }
 }
 
+document.getElementById("confirmBtn").addEventListener('click', function()
+{
+    let formulario = document.getElementById('mixForm');
+    formulario.submit();
+});
+
+document.getElementById("returnBtn").addEventListener('click', function()
+{
+    document.getElementById("joinForm").style.display = "block";
+    document.getElementById("confirmation").style.display = "none";
+});
 

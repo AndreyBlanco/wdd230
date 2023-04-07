@@ -488,7 +488,7 @@ main {
     font-size: 1.5rem;
 }
 
-#hidden {
+#hidden, #confirmation {
     display: none;
 }
 
