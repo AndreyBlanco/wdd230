@@ -57,7 +57,7 @@
             <div id="joinForm">
                 <img class="leafs" src="images/leafs.svg" alt="leafs">
                 <h2>Fruits Mix Form</h2>
-                <form id="mixForm" method="get" action="">
+                <form name="mixForm" id="mixForm" method="get" action="">
                     <fieldset id="personalInfo">
                         <legend>Personal Information</legend>
                         <label class="top">First Name* <input type="text" name="fname" required></label>
@@ -82,12 +82,9 @@
                         <label class="toHide"><textarea class="textField" name="desc" placeholder="Please, add special instructions">Please, add special instructions</textarea></label>
                     </fieldset>
                     <div id="sub">
-                        <input type="submit" value="Go to Mix" class="submitBtn">
+                        <input id="subOrder" type="button" value="Go to Mix">
                     </div>                    
                 </form>
-            </div>
-            <div id="membership">
-                
             </div>
             
         </main>
