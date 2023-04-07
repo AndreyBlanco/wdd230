@@ -69,13 +69,81 @@ function changeForms()
     }
     else
     {
-        document.getElementById("fnameConf").textContent = order.fname.value;
-        document.getElementById("emailConf").textContent = order.email.value;
-        document.getElementById("telConf").textContent = order.tel.value;
+        var carbohydrates = 0;
+        var protein = 0;
+        var fat = 0;
+        var calories = 0;
+        var sugar = 0;
+        
+        for (let index = 0; index < 39; index++)
+        {      
+            if (data[index].name == order.iOne.options[iOne.selectedIndex].value)
+            {
+                document.getElementById("ch1").textContent = data[index].nutritions.carbohydrates;
+                document.getElementById("p1").textContent = data[index].nutritions.protein;
+                document.getElementById("f1").textContent = data[index].nutritions.fat;
+                document.getElementById("cal1").textContent = data[index].nutritions.calories;
+                document.getElementById("s1").textContent = data[index].nutritions.sugar;
+
+                carbohydrates = carbohydrates + data[index].nutritions.carbohydrates;
+                protein = protein + data[index].nutritions.protein;
+                fat = fat + data[index].nutritions.fat;
+                calories = calories + data[index].nutritions.calories;
+                sugar = sugar + data[index].nutritions.sugar;
+            };
+
+            if (data[index].name == order.iTwo.options[iTwo.selectedIndex].value)
+            {
+                document.getElementById("ch2").textContent = data[index].nutritions.carbohydrates;
+                document.getElementById("p2").textContent = data[index].nutritions.protein;
+                document.getElementById("f2").textContent = data[index].nutritions.fat;
+                document.getElementById("cal2").textContent = data[index].nutritions.calories;
+                document.getElementById("s2").textContent = data[index].nutritions.sugar;
+
+                carbohydrates = carbohydrates + data[index].nutritions.carbohydrates;
+                protein = protein + data[index].nutritions.protein;
+                fat = fat + data[index].nutritions.fat;
+                calories = calories + data[index].nutritions.calories;
+                sugar = sugar + data[index].nutritions.sugar;
+            }
+
+            if (data[index].name == order.iThree.options[iThree.selectedIndex].value)
+            {
+                document.getElementById("ch3").textContent = data[index].nutritions.carbohydrates;
+                document.getElementById("p3").textContent = data[index].nutritions.protein;
+                document.getElementById("f3").textContent = data[index].nutritions.fat;
+                document.getElementById("cal3").textContent = data[index].nutritions.calories;
+                document.getElementById("s3").textContent = data[index].nutritions.sugar;
+
+                carbohydrates = carbohydrates + data[index].nutritions.carbohydrates;
+                protein = protein + data[index].nutritions.protein;
+                fat = fat + data[index].nutritions.fat;
+                calories = calories + data[index].nutritions.calories;
+                sugar = sugar + data[index].nutritions.sugar;
+            }
+        }
+
+
+        document.getElementById("ch4").textContent = carbohydrates.toFixed(2);
+        document.getElementById("p4").textContent = protein.toFixed(2);
+        document.getElementById("f4").textContent = fat.toFixed(2);
+        document.getElementById("cal4").textContent = calories.toFixed(2);
+        document.getElementById("s4").textContent = sugar.toFixed(2);        
+        
+        document.getElementById("fnameConf").textContent = `Name: ${order.fname.value}`;
+        document.getElementById("emailConf").textContent = `Email: ${order.email.value}`;
+        document.getElementById("telConf").textContent = `Phone: ${order.tel.value}`;
         document.getElementById("iOneConf").textContent = order.iOne.options[iOne.selectedIndex].value;
         document.getElementById("iTwoConf").textContent = order.iOne.options[iTwo.selectedIndex].value;
         document.getElementById("iThreeConf").textContent = order.iOne.options[iThree.selectedIndex].value;
+
+        document.getElementById("iOneImg").setAttribute('src', `images/products/${order.iOne.options[iOne.selectedIndex].value}.jpg`);
+        document.getElementById("iTwoImg").setAttribute('src', `images/products/${order.iOne.options[iTwo.selectedIndex].value}.jpg`);
+        document.getElementById("iThreeImg").setAttribute('src', `images/products/${order.iOne.options[iThree.selectedIndex].value}.jpg`);
         
+        document.getElementById("iOneImg").setAttribute('alt', `${order.iOne.options[iOne.selectedIndex].value}`);
+        document.getElementById("iTwoImg").setAttribute('alt', `${order.iOne.options[iTwo.selectedIndex].value}`);
+        document.getElementById("iThreeImg").setAttribute('alt', `${order.iOne.options[iThree.selectedIndex].value}`);
 
         if (order.desc.value == "Please, add special instructions")
         {
@@ -89,8 +157,7 @@ function changeForms()
         document.getElementById("joinForm").style.display = "none";
         document.getElementById("confirmation").style.display = "block";
 
-        /*
-        */
+        
     }
 }
 

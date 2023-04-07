@@ -179,7 +179,7 @@ main {
     margin-left: 10px;
 }
 
-.headings , #joinForm h2 {
+.headings, #joinForm h2, #confirmation h2 {
     font-family: Alatsi, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.7rem;
@@ -430,11 +430,11 @@ main {
 
 /*FRESH*/
 
-#joinForm {
+#joinForm, #confirmation {
     margin: 20px 0;
 }
 
-#mixForm {
+#mixForm, #confirmationForm {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -463,6 +463,18 @@ main {
     background-color: #fec60d2b;
     width: 100%;
     height: 300px;
+    padding: 10px;
+    font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#descConf {
+    border: none;
+    resize: none;
+    background-color: #fec60d2b;
+    width: 96%;
+    height: 200px;
     padding: 10px;
     font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -526,8 +538,7 @@ main {
     background-color: #5B8B30;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 #ingThree {
@@ -544,7 +555,7 @@ main {
     justify-content: center;
 }
 
-#sub input{
+#sub input {
     border: none;
     background-color: #FEC70D;
     color:#5B8B30;
@@ -556,9 +567,132 @@ main {
     border-radius: 5px;
 }
 
-#sub input:hover {
+#returnBtn, #confirmBtn {
+    border: none;
+    background-color: #FEC70D;
+    color:#5B8B30;
+    font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    height: 70px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 10px;
+    align-self: center;
+    
+}
+
+#sub input:hover, #returnBtn:hover, #confirmBtn:hover {
     background-color: #5B8B30;
     color:#FEC70D;
+}
+
+.ingConf {
+    background-color: #5B8B30;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.4fr 2fr;
+    gap: 5px;
+}
+
+#resume {
+    background-color: #5B8B30;
+    padding: 10px;
+}
+
+#resume div {
+    display: flex;
+    flex-direction: column;
+}
+
+#resume h5, #resume a span{
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: white;
+    margin: 0;
+    margin-left: 5px;
+}
+
+#resume a {
+    font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #FEC70D;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.ingConf h4 {
+    font-family: Delicious Handrawn, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    margin-left: 5px;
+    grid-column: 2/3;
+    grid-row: 1/2;    
+}
+
+.ingConf img {
+    width: 100%;
+    margin: 5px;
+    grid-column: 1/2;
+    grid-row: 1/4;    
+}
+
+.ingConf a {
+    font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #FEC70D;
+    margin: 0;
+    margin-left: 5px;
+    grid-column: 2/3;
+    grid-row: 2/3;    
+}
+
+.ingConf div{
+    display: flex;
+    flex-direction: column;
+}
+
+.ingConf div h5 {
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: white;
+    margin: 0;
+    margin-left: 5px;  
+}
+
+.ingConf div a {
+    font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    margin-left: 5px;  
+}
+
+#personalInfoConf a {
+    font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #5B8B30;
+    margin: 0;
+    padding-left: 10px;
+    display: flex;
+    width: 100%;
+    background-color: #fec60d2b;
+}
+
+#confirmationForm h3 {
+    font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F49912;
+    font-size: 2rem;
+    margin: 5px 10px;
+
 }
 
 /*FOOTER*/
