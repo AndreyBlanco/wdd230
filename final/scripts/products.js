@@ -42,7 +42,8 @@ const displayProducts = (products) => {
       portrait.setAttribute('src', `images/products/${products[index].name}.jpg`);
       portrait.setAttribute('alt', `${products[index].name}`);
       portrait.setAttribute('loading', 'lazy');
-            
+      portrait.setAttribute('class', 'lazyLoad');
+
       div.setAttribute(`class`, `divProducImg`);
       div.appendChild(portrait);
       
@@ -51,8 +52,8 @@ const displayProducts = (products) => {
   
       cards.appendChild(card);
     };
+    LazyImages();
 }
-
 
 const toFocus = document.querySelector("#hero-msg");
 
@@ -82,8 +83,46 @@ function moreProducts()
         countRest = (count - productsCount);
         count = 12;
         displayProducts(data);
-        count = countRest;
+        count = countRest
+        
     }
 
     
+}
+
+function LazyImages()
+{
+    let imagesToLoad = document.querySelectorAll(".lazyLoad");
+
+    function loadImages(image){
+    image.style.filter = "blur(0em)";
+    image.style.width = "100%";
+    image.style.opacity = "1";
+    image.style.transition = "all 1s 0.5s";
+    };
+
+    if ("IntersectionObserver" in window) {
+    
+    const observer = new IntersectionObserver((items, observer) => {
+        items.forEach((item) => {
+        if (item.isIntersecting) {
+            loadImages(item.target);
+            console.log("aqui", item);
+            observer.unobserve(item.target);
+        }
+        });
+    });
+
+    imagesToLoad.forEach((img) => {
+        observer.observe(img);
+    });
+
+
+    } else {
+
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+
+    }
 }
