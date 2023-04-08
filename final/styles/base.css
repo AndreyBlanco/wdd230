@@ -54,7 +54,7 @@ nav ul li a {
     padding: 0 2.1rem;
     font-family: Alatsi, Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    color: #5b8b30;
+    color: #405E21;
     text-decoration: none;
 }
 
@@ -138,8 +138,7 @@ nav ul.open {
     font-family: Delicious Handrawn, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
     font-size: 4rem;
-    color: white;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
+    color: black;
     margin: 0;
     padding-left: 25px;
 }
@@ -157,7 +156,7 @@ nav ul.open {
 #hero-msg a {
     background-color: #F49912;
     padding: 10px;
-    color: white;
+    color: black;
     font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2rem;
     text-decoration: none;
@@ -188,7 +187,7 @@ nav ul.open {
 #organicTxt  {
     overflow: hidden;
     padding: 30px;
-    background-color:#5B8B30;
+    background-color:#405E21;
     margin: 0;
 }
 
@@ -199,7 +198,11 @@ nav ul.open {
     margin: 0;
 }
 
-#organicTxt p, #salinasTxt {
+#salinasTxt p {
+    color: black;
+}
+
+#organicTxt p {
     font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -213,7 +216,7 @@ nav ul.open {
 #location {
     display: block;
     grid-template-rows: 1fr;
-    background-color: #5B8B30;
+    background-color: #405E21;
     margin-bottom: 25px;
 }
 
@@ -234,7 +237,7 @@ iframe {
 #contactInfo h3 {
     font-family: Alatsi, Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    color: #FEC70D;
+    color: #ffdd6f;
     margin: 0;
 }
 
@@ -269,7 +272,7 @@ main {
     font-family: Alatsi, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.7rem;
-    color: #F49912;
+    color: black;
     display: inline;
 }
 
@@ -311,7 +314,7 @@ main {
     font-weight: 400;
     font-size: 1.3rem;
     color: white;
-    background-color: #5B8B30;
+    background-color: #405E21;
     width: 100%;
     text-align: center;
     padding-top: 5px;
@@ -330,7 +333,7 @@ main {
     font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
-    color:#5B8B30;
+    color:#405E21;
     background-color: transparent;
     border: none;
     width: 150px;
@@ -376,13 +379,13 @@ main {
     font-family: Delicious Handrawn, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
     font-size: 2rem;
-    color: white;
+    color: black;
     margin: 5px;        
 }
 
 #go {
     background-color: #FEC70D;
-    color: #5B8B30;
+    color: black;
     font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     align-self: center;
@@ -413,7 +416,7 @@ main {
 }
 
 #days {
-    background-color: #5B8B30;
+    background-color: #1b290e;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.15fr 0.73fr 0.15fr 1fr;
@@ -437,7 +440,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    color: #FEC70D;
+    color: white;
     font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
 }
@@ -464,7 +467,7 @@ main {
 }
 
 #currentDay a:nth-of-type(1) {
-    color: #FEC70D;
+    color: #ffdd6f;
     font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
@@ -490,7 +493,7 @@ main {
     grid-column: 1/7;
     grid-row: 3/4;
     margin: auto;
-    color: #F49912;
+    color: #ffdd6f;
     font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
 }
@@ -539,7 +542,7 @@ main {
 
 #personalInfo legend, #specialInst legend{
     font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #F49912;
+    color: black;
     font-size: 2rem;
 }
 
@@ -575,7 +578,7 @@ main {
     font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    color: #5B8B30;
+    color: #405E21;
     margin: 10px auto;
     display: block;
 }
@@ -596,7 +599,7 @@ main {
 
 #ingOne {
     border: none;
-    background-color: #5B8B30;
+    background-color: #405E21;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -610,6 +613,7 @@ main {
     margin: 5px auto;
     text-align: center;
     margin-bottom: 20px;
+    background-color: #405E21;
 }
 
 #ingOne select, #ingTwo select, #ingThree select {
@@ -625,7 +629,7 @@ main {
 
 #ingTwo {
     border: none;
-    background-color: #5B8B30;
+    background-color: #405E21;
     display: flex;
     flex-direction: column;
     align-items: center;   
@@ -633,7 +637,7 @@ main {
 
 #ingThree {
     border: none;
-    background-color: #5B8B30;
+    background-color: #405E21;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -648,7 +652,7 @@ main {
 #sub input {
     border: none;
     background-color: #FEC70D;
-    color:#5B8B30;
+    color:black;
     font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 2rem;
@@ -660,7 +664,7 @@ main {
 #returnBtn, #confirmBtn {
     border: none;
     background-color: #FEC70D;
-    color:#5B8B30;
+    color:black;
     font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 2rem;
@@ -678,7 +682,7 @@ main {
 }
 
 .ingConf {
-    background-color: #5B8B30;
+    background-color: #405E21;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 0.4fr 2fr;
@@ -686,7 +690,7 @@ main {
 }
 
 #resume {
-    background-color: #5B8B30;
+    background-color: #405E21;
     padding: 10px;
 }
 
@@ -708,7 +712,7 @@ main {
     font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
-    color: #FEC70D;
+    color: white;
     margin: 0;
     margin-left: 5px;
 }
@@ -735,7 +739,7 @@ main {
     font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
-    color: #FEC70D;
+    color: white;
     margin: 0;
     margin-left: 5px;
     grid-column: 2/3;
@@ -779,7 +783,7 @@ main {
 
 #confirmationForm h3 {
     font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #F49912;
+    color: black;
     font-size: 2rem;
     margin: 5px 10px;
 
@@ -812,7 +816,7 @@ footer {
     padding: 0 1.5rem;
     font-family: Alatsi, Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -822,7 +826,7 @@ footer {
     justify-content: center;
     padding-bottom: 10px;
     font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
-    color: white;
+    color: black;
     font-size: 1.2rem;
 }
 
@@ -831,7 +835,7 @@ footer {
     align-items: end;
     justify-content: center;
     padding-bottom: 10px;
-    color: white;
+    color: black;
     font-family: Alatsi, Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
 }
@@ -851,7 +855,7 @@ footer {
 }
 
 #footLine a {
-    color: white;
+    color: black;
     font-family: Bai Jamjuree, Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
     align-self: center;
@@ -874,7 +878,7 @@ footer {
 }
 
 #atributions a {
-    color:#5b8b30;
+    color:black;
     text-decoration: none;
     font-family: Delicious Handrawn, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;

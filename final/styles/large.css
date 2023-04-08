@@ -412,7 +412,6 @@
     #organicTxt  {
         overflow: hidden;
         padding: 30px;
-        background-color:#5B8B30;
         margin: 0;
     }
 
@@ -438,7 +437,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        background-color: #5B8B30;
         margin-bottom: 25px;
     }
 
@@ -459,7 +457,7 @@
     #contactInfo h3 {
         font-family: Alatsi, Arial, Helvetica, sans-serif;
         font-size: 2rem;
-        color: #FEC70D;
+        color: #ffdd6f;
         margin: 0;
     }
 
