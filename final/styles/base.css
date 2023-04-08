@@ -105,9 +105,8 @@ nav ul.open {
 /*HERO*/
 
 #hero {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.3fr 1fr;
+    display: flex;
+    flex-direction: column;
 }
 
 #hero-box {
@@ -139,6 +138,7 @@ nav ul.open {
     font-weight: 400;
     font-size: 4rem;
     color: black;
+    background-color: #FEC70D;
     margin: 0;
     padding-left: 25px;
 }
@@ -148,7 +148,7 @@ nav ul.open {
     font-family: Alatsi, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     color: white;
-    background-color: #5b8b30;
+    background-color: #405E21;
     padding: 10px 25px;
     padding-bottom: 40px;
 }

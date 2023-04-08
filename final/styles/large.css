@@ -63,6 +63,8 @@
 
     /*HERO*/
 
+
+
     #hero {
         display: grid;
         grid-template-columns: 1fr 0.8fr;
@@ -89,15 +91,15 @@
     }
     
     .home-title {
-        font-size: 5.5rem;
+        font-size: 3.2rem;
         margin: 0;
-        padding-left: 0;
+        padding-left: 30px;
     }
     
     #hero-msg p {
         padding: 10px;
         font-size: 0.9rem;
-        background-color: #5a8b30bf;
+        background-color: #405E21;
     }
     
     #hero-msg a {
